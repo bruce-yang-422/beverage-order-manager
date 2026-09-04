@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="飲料點單管理器 Logo" width="160">
+</p>
+
 # 飲料點單管理器
 
 線上使用網址（GitHub Pages）：<https://bruce-yang-422.github.io/beverage-order-manager/>
