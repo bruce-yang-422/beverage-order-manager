@@ -1,0 +1,35 @@
+# 作業系統產生的檔案
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 編輯器與 IDE 設定
+.vscode/
+.idea/
+*.code-workspace
+
+# 暫存與備份檔案
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# 紀錄檔
+*.log
+
+# 本機環境變數與機密設定
+.env
+.env.*
+!.env.example
+
+# 前端套件與建置輸出
+node_modules/
+dist/
+build/
+
+# 測試與快取資料
+coverage/
+.cache/
