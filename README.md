@@ -1,17 +1,22 @@
 # 飲料點單管理器
 
-這是一個單檔版的飲料點單小工具，目前內容版本為 **v2.2**。
+線上使用網址（GitHub Pages）：<https://bruce-yang-422.github.io/beverage-order-manager/>
+
+這是一個靜態網頁版的飲料點單小工具，目前內容版本為 **v2.2**。
 
 ## 專案結構
 
-- `index.html`：網站首頁，包含完整的 HTML、CSS 與 JavaScript。
+- `index.html`：網站首頁，包含 HTML 畫面結構。
+- `css/style.css`：網站的外觀與版面樣式。
+- `js/script.js`：名單資料、互動操作與 PNG 下載功能。
 - HTML：負責畫面骨架，例如標題列、圖例、進度條與名單容器。
 - CSS：負責 macOS 玻璃視窗、卡片及狀態顏色等外觀。
-- JavaScript：負責名單資料、點擊切換狀態、統計未點名單及下載 PNG。
+- JavaScript：負責名單資料、點擊切換狀態、保存當日進度、統計未點名單及下載 PNG。
+- 點單狀態會保存在目前瀏覽器，並於每天 00:00 或按下「重置今日」後清除。
 
 ## 修改人名或樓層
 
-在 `index.html` 下方的 `<script>` 中修改 `sections` 陣列：
+在 `js/script.js` 中修改 `sections` 陣列：
 
 - `label`：分組名稱，例如 `2F`、`中區`、`3F`。
 - `people`：人員名單。
