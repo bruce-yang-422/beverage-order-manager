@@ -2,6 +2,8 @@
 
 線上使用網址（GitHub Pages）：<https://bruce-yang-422.github.io/beverage-order-manager/>
 
+![飲料點單管理器畫面預覽](assets/beverage-order-manager-preview.png)
+
 這是一個靜態網頁版的飲料點單小工具，目前內容版本為 **v2.2**。
 
 ## 專案結構
