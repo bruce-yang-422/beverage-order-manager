@@ -11,30 +11,28 @@
   }
 */
 const sections = [
-  { label: '2F', people: [
-    { name:'吳家豪',       sub:'' },
-    { name:'黃之芸',       sub:'' },
-    { name:'潘子傑',       sub:'' },
-    { name:'黃湘庭',       sub:'' },
-    { name:'Evan',         sub:'' },
-    { name:'楊翔志',       sub:'' },
-    { name:'鄭至均',       sub:'' },
-    { name:'蔡依純',       sub:'' },
-    { name:'徐宗裕',       sub:'' },
-    { name:'小呆',         sub:'曾琪晏' },
-    { name:'謝宇童',       sub:'' },
-    { name:'林怡晴',       sub:'' },
-    { name:'多多',         sub:'張庭軒' },
+  { label: '2F・行政區', people: [
+    { name:'簡榆晏', sub:'Evan · #27' },
+    { name:'黃湘庭', sub:'小庭 · #27' },
+    { name:'潘子傑', sub:'小傑 · #27' },
+    { name:'吳家豪', sub:'#32' },
+    { name:'楊翔志', sub:'Bruce · #36' },
+    { name:'魏華楹', sub:'#23' },
   ]},
-  { label: '中區', people: [
-    { name:'黃佩琦',  sub:'Peichi' },
-    { name:'伍家薰兒',sub:'' },
-    { name:'魏華楹',  sub:'Leann' },
-    { name:'鄧華萍',  sub:'' },
-    { name:'Alan',    sub:'' },
-    { name:'郭項',    sub:'' },
+  { label: '2F・業務區', people: [
+    { name:'伍家薰', sub:'薰兒 · #28' },
+    { name:'郭項',   sub:'#25' },
+    { name:'林怡晴', sub:'晴晴 · #37' },
+    { name:'蔡依純', sub:'#10' },
+    { name:'徐宗裕', sub:'#28' },
+    { name:'謝宇童', sub:'#37' },
+    { name:'鄭至均', sub:'#10' },
   ]},
-  { label: '3F', people: [
+  { label: '2F・主管區', people: [
+    { name:'Alan',   sub:'#22' },
+    { name:'黃之芸', sub:'#18' },
+  ]},
+  { label: '1F', people: [
     { name:'蔡欣妮',  sub:'' },
     { name:'林玟瑤',  sub:'' },
     { name:'林巧蓉',  sub:'' },
@@ -515,7 +513,7 @@ function renderPngCanvas(){
     ctx.fillText(sec.label, winX + contentPad, y + 8);
     ctx.strokeStyle = 'rgba(0,0,0,0.08)';
     ctx.beginPath();
-    ctx.moveTo(winX + contentPad + 34, y + 5);
+    ctx.moveTo(winX + contentPad + ctx.measureText(sec.label).width + 14, y + 5);
     ctx.lineTo(winX + contentPad + gridWidth, y + 5);
     ctx.stroke();
     y += 21 + titleGap;
